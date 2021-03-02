@@ -19,9 +19,9 @@ This app will allow a user to build a custom drift car with the provided parts b
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [Wireframe 1]()
-- [Wireframe 2]()
-- [Wireframe 3]()
+- [Wireframe 1](https://res.cloudinary.com/acurunner79/image/upload/v1614703240/IMG_2775_wqzgqa.heic)
+- [Wireframe 2](https://res.cloudinary.com/acurunner79/image/upload/v1614703151/IMG_2776_kj6v8y.heic)
+- [Wireframe 3](https://res.cloudinary.com/acurunner79/image/upload/v1614703142/IMG_2777_zfjzu1.heic)
 - [Architecture Link](https://res.cloudinary.com/acurunner79/image/upload/v1614619081/IMG_2773_lxrzt7.heic)
 - [Time Priority Matrix](https://res.cloudinary.com/acurunner79/image/upload/v1614621098/IMG_2774_qesqwj.heic)
 
