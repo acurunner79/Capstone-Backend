@@ -12,7 +12,7 @@ class SuspensionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create suspension" do
     assert_difference('Suspension.count') do
-      post suspensions_url, params: { suspension: { brand: @suspension.brand, type: @suspension.type } }, as: :json
+      post suspensions_url, params: { suspension: { brand: @suspension.brand, name: @suspension.name } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class SuspensionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update suspension" do
-    patch suspension_url(@suspension), params: { suspension: { brand: @suspension.brand, type: @suspension.type } }, as: :json
+    patch suspension_url(@suspension), params: { suspension: { brand: @suspension.brand, name: @suspension.name } }, as: :json
     assert_response 200
   end
 

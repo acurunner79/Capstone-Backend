@@ -12,7 +12,7 @@ class HandBrakesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create hand_brake" do
     assert_difference('HandBrake.count') do
-      post hand_brakes_url, params: { hand_brake: { type: @hand_brake.type } }, as: :json
+      post hand_brakes_url, params: { hand_brake: { name: @hand_brake.name } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class HandBrakesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update hand_brake" do
-    patch hand_brake_url(@hand_brake), params: { hand_brake: { type: @hand_brake.type } }, as: :json
+    patch hand_brake_url(@hand_brake), params: { hand_brake: { name: @hand_brake.name } }, as: :json
     assert_response 200
   end
 

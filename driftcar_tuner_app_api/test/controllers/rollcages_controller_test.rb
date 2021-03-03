@@ -12,7 +12,7 @@ class RollcagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create rollcage" do
     assert_difference('Rollcage.count') do
-      post rollcages_url, params: { rollcage: { brand: @rollcage.brand, type: @rollcage.type } }, as: :json
+      post rollcages_url, params: { rollcage: { brand: @rollcage.brand, name: @rollcage.name } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class RollcagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update rollcage" do
-    patch rollcage_url(@rollcage), params: { rollcage: { brand: @rollcage.brand, type: @rollcage.type } }, as: :json
+    patch rollcage_url(@rollcage), params: { rollcage: { brand: @rollcage.brand, name: @rollcage.name } }, as: :json
     assert_response 200
   end
 

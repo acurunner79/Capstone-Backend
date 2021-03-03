@@ -46,6 +46,6 @@ class HandBrakesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def hand_brake_params
-      params.require(:hand_brake).permit(:type)
+      params.require(:hand_brake).permit(:name)
     end
 end

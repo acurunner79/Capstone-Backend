@@ -46,6 +46,6 @@ class DifferentialsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def differential_params
-      params.require(:differential).permit(:type, :brand)
+      params.require(:differential).permit(:name, :brand)
     end
 end

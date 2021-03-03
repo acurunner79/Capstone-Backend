@@ -12,7 +12,7 @@ class DifferentialsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create differential" do
     assert_difference('Differential.count') do
-      post differentials_url, params: { differential: { brand: @differential.brand, type: @differential.type } }, as: :json
+      post differentials_url, params: { differential: { brand: @differential.brand, name: @differential.name } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class DifferentialsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update differential" do
-    patch differential_url(@differential), params: { differential: { brand: @differential.brand, type: @differential.type } }, as: :json
+    patch differential_url(@differential), params: { differential: { brand: @differential.brand, name: @differential.name } }, as: :json
     assert_response 200
   end
 

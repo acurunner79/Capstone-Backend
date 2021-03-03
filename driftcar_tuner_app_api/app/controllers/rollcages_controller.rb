@@ -46,6 +46,6 @@ class RollcagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def rollcage_params
-      params.require(:rollcage).permit(:type, :brand)
+      params.require(:rollcage).permit(:name, :brand)
     end
 end

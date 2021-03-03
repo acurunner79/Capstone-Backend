@@ -46,6 +46,6 @@ class SuspensionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def suspension_params
-      params.require(:suspension).permit(:type, :brand)
+      params.require(:suspension).permit(:name, :brand)
     end
 end

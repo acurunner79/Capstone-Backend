@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_02_204716) do
+ActiveRecord::Schema.define(version: 2021_03_03_052811) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2021_03_02_204716) do
   end
 
   create_table "differentials", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.string "brand"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -59,20 +59,20 @@ ActiveRecord::Schema.define(version: 2021_03_02_204716) do
   end
 
   create_table "hand_brakes", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "rollcages", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.string "brand"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "suspensions", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.string "brand"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
